@@ -134,8 +134,11 @@ nlevels(bio_gender_fct)
 
 # workflow  -----------------------------------------------------
 
-x <- "hello" # needed to fix this bug
+x <- "hello # needed to fix this bug
 
-x <- "hello"
+x <- "hello
+
+
+
 
 
