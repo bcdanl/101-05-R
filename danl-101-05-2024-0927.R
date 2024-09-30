@@ -41,8 +41,15 @@ flights
 
 airlines
 
-flight_airline <- flights |> 
+
+
+
+flight_airline <- 
+  flights |> 
   left_join(airlines)
+
+
+
 
 
   
