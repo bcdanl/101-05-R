@@ -57,7 +57,8 @@ not_jan <- flights |>
   filter( !(month == 1) )
 
 # nrow(not_jan) + nrow(jan1) == nrow(flights)
-
+nrow(not_jan) + nrow(jan1)
+nrow(flights)
 
 notjan <- flights |> 
   filter( month != 1 )
