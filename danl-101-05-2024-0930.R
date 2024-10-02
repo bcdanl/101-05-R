@@ -21,7 +21,7 @@ flight_airline <-
 # install.packages("nycflights13")
 library(nycflights13)
 
-flights <- flights
+flights <- nycflights13::flights
 ??flights
 
 airlines
@@ -39,7 +39,7 @@ dec25 <- flights |>
   filter(month == 12, 
          day == 25)
 
-
+flights$month
 flights$month == 1
 class(flights$month == 1) # logical
 
