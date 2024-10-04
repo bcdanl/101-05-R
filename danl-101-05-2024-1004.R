@@ -36,10 +36,13 @@ df <- data.frame(v1 = c(1, NA, 3),
                  v2 = c(1, 2, 3))
 
 library(tidyverse)
+
+# Keep observations with missing values in variable v1
 df |> 
   filter( is.na(v1) )
 
 
+# Keep observations with non-missing values in variable v1
 df |> 
   filter( !is.na(v1) )
 
@@ -47,19 +50,19 @@ df |>
 
 # arrange() ---------------------------------------------------------------
 
-
 library(nycflights13)
-
-
 flights <- nycflights13::flights
 
+# sort observations by variable `dep_delay` in ascending order
 df_arranged <- flights |> 
   arrange(dep_delay)
 
+# sort observations by variable `dep_delay` in descending order
 df_arranged_desc <- flights |> 
   arrange( desc(dep_delay) )
 
-
+# sort observations by numeric variable `dep_delay` in descending order
+  # this is possible only for numeric variables
 df_arranged_desc <- flights |> 
   arrange( -dep_delay )
 
