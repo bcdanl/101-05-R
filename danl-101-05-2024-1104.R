@@ -113,7 +113,7 @@ ggplot(data = nbc_show,
                      y = PE,
                      color = Genre)) +
   geom_point() +
-  geom_smooth(se = F) +
+  geom_smooth(se = F) + 
   geom_smooth(method = "lm",
               se = F)
 
