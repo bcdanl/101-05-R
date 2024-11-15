@@ -45,4 +45,3 @@ ggplot(data = top5_carriers,
 
 
 
-
